@@ -1,8 +1,13 @@
 h1 {
     color: blue;
+    margin: 5px;
+	font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(to right, white,#ffefaf);
 }
 
 h2 {
+    border: solid;
 	margin: 5px;
 	font-family: cursive;
 	color: #3f3faf;
