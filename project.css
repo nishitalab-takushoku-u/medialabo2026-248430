@@ -1,0 +1,21 @@
+h1 {
+    margin: 5px;
+	font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(to right, yellow,darkorange);
+}
+
+h3 {
+    margin: 5px;
+	font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(to right, hotpink,#ffefaf);
+}
+
+h2 {
+    color:darkorange;
+    
+}
+ul {
+    color: brown;
+}

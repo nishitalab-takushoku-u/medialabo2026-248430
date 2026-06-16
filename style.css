@@ -1,0 +1,15 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+	margin: 5px;
+	font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(to right, white, red);
+
+}
+
+h3 {
+    color:cyan
+}
