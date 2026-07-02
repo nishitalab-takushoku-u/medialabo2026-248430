@@ -26,7 +26,29 @@ console.log("最寄駅:"+data.results.shop[1].station_name);
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+let div = document.createElement('div');
+    let body = document.querySelector('body');
+    body.insertAdjacentElement('beforeend', div);
 
+    div.setAttribute('id', 'result');
+
+    let span = document.querySelector('span#kensu');
+    span.textContent = data.results.shop.length;
+
+    for (let s of data.results.shop) {
+        let h2 = document.createElement('h2');
+        div.insertAdjacentElement('beforeend', h2);
+        h2.textContent = s.name;
+
+        let ul = document.createElement('ul');
+        div.insertAdjacentElement('beforeend', ul);
+
+        for (let prop of ['name','catch', 'access','station_name']) {
+            let li = document.createElement('li');
+            ul.insertAdjacentElement('beforeend', li);
+            li.textContent = prop + ': ' + s[prop];
+        }
+  }
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
